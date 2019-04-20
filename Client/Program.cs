@@ -12,7 +12,7 @@ namespace Client
             Console.WriteLine("Press any key to start the program...");
             Console.ReadKey();
 
-            var channel = new Channel("localhost:50051", ChannelCredentials.Insecure);
+            var channel = new Channel("localhost:5000", ChannelCredentials.Insecure);
             var client = new Greeter.GreeterClient(channel);
 
             while (true)
